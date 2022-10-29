@@ -39,7 +39,7 @@ if((isset($_POST['email']) && !empty(trim($_POST['email']))) && (isset($_POST['m
 				   Data/hora: {$data}";
 
 	if($mail->send()) {
-		echo 'Email enviado com sucesso.';
+		echo "Email enviado com sucesso. $mail";
 	} else {
 		echo 'Email não enviado.';
 	}
